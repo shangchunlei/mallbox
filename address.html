@@ -1,0 +1,104 @@
+﻿<!DOCTYPE html> 
+<html> 
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Pragma" content="no-cache">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta name="format-detection" content="telephone=no">
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<title>牛犇犇商城</title>
+
+<link href="css/ba.css" rel="stylesheet" type="text/css">
+<link href="css/mall.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="font/iconfont.css"/>
+
+</head>
+<body>
+<!-- 代码 开始 -->
+<div class="width center addressBox">
+   
+    <div class="address"> <!-- 地址 -->
+   	    <div class="addreesTxt">
+	   	  	<p>
+		   	  <strong>张三</strong>
+		   	   <span>15236253265</span>
+		   	</p>
+		   	<p>湖北 武汉 洪山区 总部国际3栋602</p>
+   	    </div>
+   	    <div class="caozuoAddrees">
+   	    	<div class="moren">
+				<input type="radio" name="radio" checked="checked"/>
+				<i></i>
+				<span>设为默认地址</span>
+			</div>
+			<div class="bianjiAddress">
+				<button>
+					<em class="icon iconfont icon-bianji"></em>
+					编辑
+				</button>
+				
+				<button class="delAddress">
+					<em class="icon iconfont icon-3"></em>
+					删除
+				</button>
+			</div>
+		</div>
+    </div>
+    
+    <div class="address"> <!-- 地址 -->
+   	    <div class="addreesTxt">
+	   	  	<p>
+		   	  <strong>张三1</strong>
+		   	   <span>15236253265</span>
+		   	</p>
+		   	<p>湖北 武汉 洪山区 总部国际3栋602</p>
+   	    </div>
+   	    <div class="caozuoAddrees">
+   	    	<div class="moren">
+   	    		<input type="radio" name="radio"/>
+				<i></i>
+				<span>设为默认地址</span>
+   	    	</div>
+			<div class="bianjiAddress">
+				<button>
+					<em class="icon iconfont icon-bianji"></em>
+					编辑
+				</button>
+				
+				<button class="delAddress">
+					<em class="icon iconfont icon-3"></em>
+					删除
+				</button>
+			</div>
+		</div>
+    </div>
+    
+	<button class="addAddress">添加地址</button>
+	
+
+</div>
+</body>
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+<script type="text/javascript">
+$(function(){
+	//设置默认地址单选
+    $(".moren i").click(function(){
+        $(this).addClass('activeI').parents(".address").siblings('.address').find('i').removeClass('activeI');
+		$(this).siblings('input').attr("checked",true).parents(".address").siblings('.address').find("input").attr("checked",false);
+		//console.log($(this).siblings('span').html());
+		$(this).siblings('span').addClass('activeIc').html('已设为默认').parents(".address").siblings('.address').find('.moren span').removeClass('activeIc').html('设为默认地址');
+	});
+    $(".address").eq(0).find('i').trigger("click");
+    
+    //删除地址
+    $('.delAddress').click(function(){
+    	console.log('删除我的父元素');
+    	$('this').parents(".address").remove().hide();
+    })
+    
+})
+</script>
+</html>

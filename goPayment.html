@@ -1,0 +1,102 @@
+﻿<!DOCTYPE html> 
+<html> 
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Pragma" content="no-cache">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta name="format-detection" content="telephone=no">
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<title>牛犇犇商城</title>
+
+<link href="css/ba.css" rel="stylesheet" type="text/css">
+<link href="css/mall.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="font/iconfont.css"/>
+
+</head>
+<body>
+<!-- 代码 开始 -->
+<div class="width center">	
+	<div class="daifukuan">
+		<p>等待买家付款</p>
+		<span>预期未付款，订单将自动取消</span>
+	</div>
+   
+    <div class="payAddress daizhifu"> <!-- 地址 -->
+   	    <i class="icon iconfont icon-dingwei"></i>
+   	    <div class="addreesPay">
+	   	  	<p>
+		   	  <strong>张三</strong>
+		   	   <span>15236253265</span>
+		   	</p>
+		   	<p>湖北武汉市洪山区总部国际3栋602</p>
+   	    </div>
+    </div>
+    
+    <p class="xuanzeTitle">请选择支付方式</p>
+    <ul class="zhifufangshi"><!-- 选择支付方式 -->
+		<li>
+			<div>
+				<input type="radio" name="radio" checked="checked"/>
+				<i></i>
+			</div>
+			<em><img src="images/weixin.png"></em>
+			<span>微信支付</span>
+		</li>
+		<li>
+			<div>
+				<input type="radio" name="radio"/>
+				<i></i>
+			</div>
+			<em><img src="images/zhifubao.png"></em>
+			<span>支付宝支付</span>
+		</li> 
+	</ul>
+	
+	<ul class="payGoods">
+	   	<li>
+	   		<img src="images/banner1.jpg"/>
+	   		<div>
+	   			<p>商品名称商品名称商品名称商品名称商品名称商品名称商品名称商品名称</p>
+	   			<span>规格参数...</span>
+	   			<p>&yen;50.00 /件 <i>x<em class="numGoods">1</em></i></p>
+	   		</div>
+	   		<div class="shifu">
+	   			<p>实付:<span>&yen; <i>50.00</i></span>(免运费)</p>
+	   		</div>
+	   	</li>
+    </ul>
+    
+    <button class="lianxi"><i class="icon iconfont icon-dianhua"></i>联系卖家</button>
+    
+    <div class="bhfs">
+    	<p>订单编号：12345678987</p>
+    	<p>支付方式：支付宝</p>
+    </div>
+    
+    <div class="goBottomBox">
+    	<button class="quxiao">取消订单</button>
+    	<button>去支付</button>
+    </div>
+
+</div>
+</body>
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+<script type="text/javascript">
+$(function(){
+	//待支付页面 选择支付方式单选效果(微信或者支付宝)
+    $(".zhifufangshi i").click(function(){
+        $(this).addClass('activeI').parents("li").siblings('li').find('i').removeClass('activeI');
+		$(this).siblings('input').attr("checked",true).parents("li").siblings('li').find("input").attr("checked",false);
+		//console.log($(this).siblings('span').html());
+		var address=$(this).siblings('span').html();
+		console.log(address);
+		$(".addreeSure").html(address);
+	});
+    $(".zhifufangshi li").eq(0).find('i').trigger("click");
+    
+})
+</script>
+</html>

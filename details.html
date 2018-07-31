@@ -1,0 +1,161 @@
+﻿<!DOCTYPE html> 
+<html> 
+<head>
+<meta charset="utf-8">
+<meta http-equiv="Pragma" content="no-cache">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta name="format-detection" content="telephone=no">
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+<title>牛犇犇商城</title>
+
+<link href="css/ba.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="css/swiper.min.css"/>
+<link href="css/mall.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="font/iconfont.css"/>
+
+</head>
+<body>
+<!-- 代码 开始 -->
+<div class="width center">
+	
+    <div class="topBox">牛犇犇商城</div>
+
+<!-- 轮播 -->
+<!-- Swiper -->
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="images/banner1.jpg"/></div>
+            <div class="swiper-slide"><img src="images/banner2.jpg"/></div>
+            <div class="swiper-slide"><img src="images/banner3.jpg"/></div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+    </div>
+ 
+ <!-- 详情页内容 -->
+	<div class="details">
+		<span>&yen;50:00</span>
+		<del>&yen;80:00</del>
+	 	<p>商品标题商品标题商品标题商品标题商品标</p>
+	 	<p class="introduce">商品介绍商品介绍商品介绍商品介绍商品介绍商品介绍商品介绍商品介绍商品介绍商品介绍商品介绍商品介绍商品介绍商品介绍商品介绍商品介绍商品介绍商品介绍商品介绍商品</p>
+	 	
+	 	<div class="chengnuo">
+	 		<span>
+	 			<i class="icon iconfont icon-duigou"></i>
+	 			全场包邮
+	 		</span>
+	 		<span>
+	 			<i class="icon iconfont icon-duigou"></i>
+	 			七天退换
+	 		</span>
+	 		<span>
+	 			<i class="icon iconfont icon-duigou"></i>
+	 			假一赔十
+	 		</span>
+	 	</div>
+	 	
+	 	<div class="goodDetails">
+	 		<p>商品详情</p>
+	 		<img src="images/banner1.jpg"/>
+	 		<img src="images/banner2.jpg"/>
+	 		<img src="images/banner3.jpg"/>
+	 	</div>
+	</div>
+    
+
+
+	
+<!-- 底部导航 -->
+	<ul class="footNav detailsBuy">
+		<li>
+			<i class="icon iconfont icon-shouye"></i>
+            <span>首页</span>
+        </li>
+        <button class="aloneBuy">单独购买</button>
+        <button class="tuanBuy">去拼团</button>
+	</ul>
+</div>
+
+<!-- 规格弹框 -->
+<div class="specifications">
+	<img src="images/banner2.jpg" class="detailsImg" />
+	<div class="details_gg">
+		<p>&yen;50:00</p>
+		<span>请选择</span>
+		<i class="closeBox">&times;</i>
+	</div>
+	
+	<!-- 规格选择 -->
+	<div class="guigexz">
+		<div style="clear: both;"></div>
+		<p class="speciTitle">选择颜色</p>
+		<ul class="speciLi">
+			<li class="activeNav">红色</li>
+			<li>黄色</li>
+			<li>暗红色</li>
+		</ul>
+		
+		<div style="clear: both;"></div>
+		<p class="speciTitle">选择套餐</p>
+		<ul class="speciLi">
+			<li class="activeNav">套餐1</li>
+			<li>套餐2</li>
+			<li>暗红套餐3</li>
+			<li>暗红套餐4</li>
+			<li>暗红套餐5</li>
+		</ul>
+		
+		<div style="clear: both;"></div>
+		<div class="numBox">
+			<p class="speciTitleNum">选择数量</p>
+			<div class="jiajian">
+				<button class="reduceBtn">-</button>
+				<span class="numShow">1</span>
+				<button class="addBtn">+</button>
+			</div>
+		</div>
+	</div>
+	
+	<button class="sureGood">确定</button>
+</div>
+
+</body>
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<!--<script type="text/javascript" src="js/flexible.js"></script>-->
+<script type="text/javascript" src="js/iscroll.js"></script>
+<script type="text/javascript" src="js/navbarscroll.js"></script>
+<script type="text/javascript" src="js/swiper.min.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+<script type="text/javascript">
+$(function(){
+	$('.wrapper').navbarscroll();
+	
+	$('.tuanBuy').click(function(){
+		tank('请您登陆')  //警告弹框演示
+	})
+	
+	$(".aloneBuy").click(function(){
+		$('.specifications').slideDown(300);
+		tkBac();
+	});
+	$('.closeBox').click(function(){
+		$(this).parents().find('.specifications').hide();
+		$('.tkBac').hide();
+	})
+});
+
+//swiper轮播
+var swiper = new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev',
+        paginationClickable: true,
+        spaceBetween: 50,
+        centeredSlides: true,
+        autoplay: 3500,
+        autoplayDisableOnInteraction: true
+    });
+</script>
+</html>

@@ -1,0 +1,942 @@
+input {
+  border: none;
+}
+input:focus {
+  outline: none;
+}
+input[type="text"],
+input[type="button"],
+input[type="submit"],
+input[type="reset"] {
+  -webkit-appearance: none;
+}
+textarea {
+  -webkit-appearance: none;
+}
+html * {
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+}
+.center {
+  margin: 0 auto;
+}
+.width {
+  min-width: 3.2rem;
+  max-width: 6.4rem;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.clear {
+  clear: both;
+}
+button {
+  border: none;
+}
+html,
+body {
+  height: 100%;
+}
+.topBox {
+  width: 100%;
+  height: 0.6rem;
+  background: #e01222;
+  text-align: center;
+  line-height: 0.6rem;
+  color: #fff;
+  font-size: 0.28rem;
+  display: none;
+}
+.mallNav {
+  width: 6.4rem;
+  height: 0.6rem;
+  position: fixed;
+  top: 0;
+  left: 50%;
+  margin-left: -3.2rem;
+  background: #fff;
+  z-index: 2;
+}
+.mallNav .wrapper02 {
+  position: relative;
+  height: 100%;
+  overflow: hidden;
+}
+.mallNav .wrapper02 .scroller {
+  position: absolute;
+}
+.mallNav .wrapper02 .scroller li {
+  height: 0.6rem;
+  color: #fff;
+  float: left;
+  line-height: 0.6rem;
+  font-size: .26rem;
+  text-align: center;
+}
+.mallNav .wrapper02 .scroller li a {
+  color: #333;
+  display: block;
+  padding: 0 .3rem ;
+  font-size: .26rem;
+}
+.mallNav .wrapper02 .scroller li.cur {
+  border-bottom: 2px solid #e01222;
+  box-sizing: border-box;
+}
+.mallNav .wrapper02 .scroller li.cur a {
+  color: #e01222;
+}
+.swiper-container {
+  width: 100%;
+  height: 3.2rem;
+}
+.swiper-container img {
+  width: 100%;
+  height: 100%;
+}
+.swiper-container .swiper-pagination .swiper-pagination-bullet-active {
+  background: #e01222;
+}
+.indexSwiper {
+  margin-top: .6rem;
+}
+.classify {
+  width: 100%;
+  height: auto;
+}
+.classify ul li {
+  width: 20%;
+  height: 1.2rem;
+  float: left;
+  text-align: center;
+}
+.classify ul li img {
+  width: 60%;
+  margin: 0 auto;
+}
+.classify ul li span {
+  font-size: 0.22rem;
+  line-height: 0.4rem;
+  color: #333;
+}
+.shoplist {
+  width: 100%;
+  height: auto;
+  margin-top: 0.15rem;
+  border-top: 0.2rem solid #f1f1f1;
+  padding-bottom: .8rem;
+}
+.shoplist li {
+  margin-bottom: .4rem;
+}
+.shoplist li img {
+  width: 100%;
+  height: 3.2rem;
+  display: inline-block;
+}
+.shoplist li > p {
+  width: 96%;
+  margin: 0 auto;
+  font-size: 0.28rem;
+  line-height: 0.38rem;
+  color: #333;
+  margin-bottom: .2rem;
+}
+.shoplist li div {
+  width: 96%;
+  height: 0.6rem;
+  margin: 0 auto;
+  position: relative;
+}
+.shoplist li div span {
+  color: #ff0000;
+  font-size: .28rem;
+  line-height: .6rem;
+}
+.shoplist li div del {
+  font-size: .22rem;
+  color: #ccc;
+}
+.shoplist li div button {
+  width: 2.2rem;
+  height: 0.6rem;
+  border: none;
+  background: #e01222;
+  position: absolute;
+  right: 0;
+  color: #fff;
+  border-radius: 0.1rem;
+  font-size: .28rem;
+}
+.footNav {
+  height: 0.8rem;
+  min-width: 3.2rem;
+  max-width: 6.4rem;
+  width: 100%;
+  background: #fff;
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+}
+.footNav li {
+  width: 25%;
+  height: 0.8rem;
+  float: left;
+  text-align: center;
+}
+.footNav li i {
+  margin-top: .08rem;
+  display: block;
+}
+.footNav li span {
+  display: block;
+  font-size: .22rem;
+  margin-top: .03rem;
+}
+.goTop {
+  width: .6rem;
+  height: .6rem;
+  text-align: center;
+  line-height: .6rem;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.7);
+  font-size: .24rem;
+  color: #fff;
+  position: fixed;
+  bottom: .8rem;
+  right: .1rem;
+  opacity: 0 ;
+  cursor: pointer;
+}
+.tankBox {
+  padding: .1rem .12rem;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  position: fixed;
+  font-size: .22rem;
+  display: none;
+  top: 20%;
+  left: 50%;
+  top: 50%;
+  border-radius: 0.1rem;
+}
+.tkBac {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 2;
+}
+.details {
+  width: 100%;
+  height: auto;
+}
+.details > span {
+  margin-left: .2rem;
+  padding: .06rem 0;
+  font-size: .28rem;
+  color: #e01222;
+  display: inline-block;
+}
+.details > p {
+  width: 96%;
+  height: auto;
+  margin: 0 auto;
+  font-size: .28rem;
+  line-height: .34rem;
+  color: #333;
+}
+.details .introduce {
+  color: #999;
+  font-size: .22rem;
+  margin-top: .1rem;
+}
+.details .chengnuo {
+  font-size: .2rem;
+  border-top: 1px solid #dedede;
+  border-bottom: 1px solid #dedede;
+  margin-top: .1rem;
+  padding: .1rem 0;
+}
+.details .chengnuo span {
+  margin-left: .2rem;
+  color: #999;
+}
+.details .chengnuo span i {
+  font-size: .18rem;
+  color: #e01222;
+}
+.details del {
+  font-size: .22rem;
+  color: #ccc;
+}
+.details .goodDetails {
+  width: 100%;
+  height: auto;
+  padding-bottom: .8rem;
+}
+.details .goodDetails p {
+  font-size: .24rem;
+  height: .6rem;
+  line-height: .6rem;
+  text-indent: .1rem;
+}
+.details .goodDetails img {
+  width: 100%;
+}
+.detailsBuy button {
+  width: 37.5%;
+  height: 0.8rem;
+  float: left;
+  border: none;
+  color: #fff;
+}
+.detailsBuy .aloneBuy {
+  background: #fc5a0a;
+}
+.detailsBuy .tuanBuy {
+  background: #e01222;
+}
+.specifications {
+  width: 100%;
+  height: auto;
+  background: #fff;
+  border-top: 1px solid #dedede;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 3;
+  display: none;
+}
+.specifications .detailsImg {
+  width: 1rem;
+  height: 1rem;
+  border-radius: 0.1rem;
+  border: 1px solid #ccc;
+  position: absolute;
+  top: -5%;
+  left: .1rem;
+}
+.specifications .details_gg {
+  width: 5rem;
+  height: 1rem;
+  margin-left: 1.3rem;
+  position: relative;
+}
+.specifications .details_gg p {
+  font-size: .28rem;
+  color: #e01222;
+  margin-top: .05rem;
+}
+.specifications .details_gg span {
+  font-size: .22rem;
+  color: #333;
+}
+.specifications .details_gg i {
+  display: block;
+  position: absolute;
+  right: .02rem;
+  top: .01rem;
+  color: #ccc;
+  font-size: .34rem;
+  font-style: normal;
+}
+.specifications .guigexz {
+  width: 100%;
+  height: auto;
+}
+.specifications .guigexz .speciTitle {
+  width: 6.2rem;
+  height: 0.4rem;
+  line-height: .4rem;
+  margin-left: .1rem;
+  font-size: .23rem;
+  color: #333;
+  clear: both;
+  margin-top: .15rem;
+}
+.specifications .guigexz .speciLi {
+  width: 6.2rem;
+  height: auto;
+  margin: .02rem auto;
+  border-top: 1px solid #dedede;
+}
+.specifications .guigexz .speciLi li {
+  padding: .05rem .08rem;
+  border: 1px solid #dedede;
+  border-radius: 0.1rem;
+  float: left;
+  margin: .1rem .15rem 0 0;
+  font-size: .22rem;
+  color: #999;
+}
+.specifications .guigexz .speciLi .activeNav {
+  background: #e01222;
+  color: #fff;
+  border-color: #e01222;
+}
+.specifications .guigexz .numBox {
+  width: 6.2rem;
+  height: auto;
+  margin-left: .1rem;
+  margin-top: .2rem;
+  border-top: 1px solid #dedede;
+  padding-top: .1rem;
+}
+.specifications .guigexz .numBox .speciTitleNum {
+  width: 1.5rem;
+  height: 0.6rem;
+  float: left;
+  line-height: .6rem;
+  font-size: .22rem;
+  color: #333;
+}
+.specifications .guigexz .numBox .jiajian {
+  width: 4.3rem;
+  height: 0.6rem;
+  float: left;
+  margin-left: .2rem;
+}
+.specifications .guigexz .numBox .jiajian button {
+  width: 0.5rem;
+  height: 0.5rem;
+  margin-top: .05rem;
+  background: #ccc;
+  border: 1px solid #dedede;
+  float: left;
+}
+.specifications .guigexz .numBox .jiajian span {
+  width: auto;
+  height: 0.5rem;
+  line-height: .5rem;
+  font-size: .22rem;
+  color: #333;
+  padding: 0 .2rem;
+  display: block;
+  border-top: 1px solid #dedede;
+  border-bottom: 1px solid #dedede;
+  float: left;
+  margin-top: .05rem;
+  box-sizing: border-box;
+}
+.specifications .sureGood {
+  width: 100%;
+  height: 0.8rem;
+  background: #e01222;
+  border: none;
+  color: #fff;
+  font-size: .24rem;
+  margin-top: .2rem;
+}
+.payAddress {
+  width: 100%;
+  height: 1.4rem;
+  background: #ffffff url(../images/bianBottom.jpg) repeat-x bottom;
+  background-size: 100% auto;
+}
+.payAddress i {
+  line-height: 1.4rem;
+  display: block;
+  text-align: center;
+  float: left;
+}
+.payAddress .icon-dingwei {
+  width: 0.6rem;
+  height: 1.4rem;
+  font-size: .55rem;
+}
+.payAddress .addreesPay {
+  width: 5.1rem;
+  height: 100%;
+  float: left;
+  margin-left: .1rem;
+}
+.payAddress .addreesPay p {
+  line-height: .4rem;
+  font-size: .22rem;
+}
+.payAddress .addreesPay p:first-child {
+  margin-top: .25rem;
+}
+.payAddress .addreesPay p:first-child strong {
+  font-size: .28rem;
+}
+.payAddress .icon-jiantou {
+  width: 0.6rem;
+  height: 1.4rem;
+}
+.payGoods {
+  width: 100%;
+  height: auto;
+  margin-top: .2rem;
+}
+.payGoods li {
+  width: 100%;
+  height: 1.8rem;
+  margin-bottom: .2rem;
+}
+.payGoods li img {
+  width: 1.6rem;
+  height: 1.6rem;
+  float: left;
+  margin: .1rem;
+}
+.payGoods li > div {
+  width: 4.3rem;
+  height: 1.8rem;
+  float: left;
+  margin: .1rem;
+  font-size: .22rem;
+  line-height: .35rem;
+}
+.payGoods li > div p {
+  color: #333;
+}
+.payGoods li > div p i {
+  font-style: normal;
+  float: right;
+  color: #999;
+}
+.payGoods li > div p i em {
+  font-style: normal;
+}
+.payGoods li > div span {
+  color: #999;
+  font-size: .22rem;
+  display: inline-block;
+  margin: .08rem 0;
+}
+.payGoods li .shuliangg {
+  width: 6.2rem;
+  height: auto;
+}
+.payGoods li .shuliangg p {
+  float: left;
+}
+.payGoods li .shuliangg .jiajian {
+  float: right;
+}
+.payGoods li .shifu {
+  width: 6.2rem;
+  height: auto;
+  text-align: right;
+  font-size: .22rem;
+}
+.payGoods li .shifu span {
+  color: #e01222;
+}
+.payGoods li .shifu span i {
+  font-size: .28rem;
+  color: #e01222;
+}
+.payBottomBox {
+  height: 0.8rem;
+  min-width: 3.2rem;
+  max-width: 6.4rem;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  border-top: 1px solid #dedede;
+}
+.payBottomBox p {
+  width: 4.4rem;
+  height: 0.8rem;
+  line-height: .8rem;
+  float: left;
+  text-align: right;
+  padding-right: .1rem;
+}
+.payBottomBox p span {
+  color: #e01222;
+}
+.payBottomBox p span i {
+  font-style: normal;
+  font-size: .32rem;
+}
+.payBottomBox button {
+  width: 1.9rem;
+  height: 0.8rem;
+  background: #e01222;
+  color: #fff;
+  font-size: .22rem;
+}
+.daifukuan {
+  width: 100%;
+  height: 1.7rem;
+  background: #e01222 url(../images/youjianImg.jpg) right no-repeat;
+  background-size: auto 100%;
+  color: #fff;
+}
+.daifukuan p {
+  font-size: .32rem;
+  padding-top: .4rem;
+  margin-left: .35rem;
+  margin-bottom: .05rem;
+}
+.daifukuan span {
+  font-size: .24rem;
+  margin-left: .35rem;
+}
+.daizhifu i {
+  color: #e01222;
+}
+.daizhifu .addreesPay p:first-child strong {
+  margin-right: .2rem;
+}
+.xuanzeTitle {
+  width: 100%;
+  height: 0.8rem;
+  line-height: .8rem;
+  background: #dedede;
+  text-indent: .2rem;
+  color: #666;
+}
+.zhifufangshi {
+  width: 6.2rem;
+  height: auto;
+  padding: .1rem .1rem .2rem .1rem;
+  border-bottom: 1px solid #dedede;
+}
+.zhifufangshi li {
+  width: 6rem;
+  height: 0.36rem;
+  margin-left: .1rem;
+  margin-top: .2rem;
+}
+.zhifufangshi li > div {
+  width: 0.35rem;
+  height: 0.35rem;
+  float: left;
+  position: relative;
+}
+.zhifufangshi li > div i {
+  width: 0.35rem;
+  height: 0.35rem;
+  display: block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  border-radius: 50%;
+  cursor: pointer;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.zhifufangshi li > div input {
+  width: 0.35rem;
+  height: 0.35rem;
+  opacity: 0;
+  position: relative;
+}
+.zhifufangshi li > div .activeI {
+  background: #e01222;
+  border: 1px solid #e01222;
+}
+.zhifufangshi li span {
+  float: left;
+  margin-left: .25rem;
+}
+.zhifufangshi li em {
+  width: 0.35rem;
+  height: 0.35rem;
+  display: inline-block;
+  float: left;
+  margin-left: .15rem;
+}
+.zhifufangshi li em img {
+  width: 100%;
+  height: 100%;
+}
+.lianxi {
+  width: 100%;
+  height: 0.8rem;
+  border-top: 1px solid #f1f1f1;
+  border-bottom: 1px solid #f1f1f1;
+  background: #ffffff;
+  font-size: .28rem;
+}
+.lianxi i {
+  font-size: .28rem;
+  color: #e01222;
+  margin-right: .1rem;
+}
+.bhfs {
+  width: 100%;
+  height: auto;
+  border-top: .15rem solid #dedede;
+  padding: .1rem 0 .8rem;
+}
+.bhfs p {
+  width: 100%;
+  height: auto;
+  font-size: .24rem;
+  color: #999;
+  line-height: .34rem;
+  text-indent: .2rem;
+}
+.goBottomBox {
+  height: 0.8rem;
+  min-width: 3.2rem;
+  max-width: 6.4rem;
+  width: 100%;
+  background: #fff;
+  position: fixed;
+  bottom: 0;
+  border-top: 1px solid #dedede;
+  text-align: right;
+}
+.goBottomBox button {
+  width: 1.7rem;
+  height: 0.6rem;
+  background: #e01222;
+  color: #fff;
+  font-size: .22rem;
+  border-radius: 0.1rem;
+  margin-top: .1rem;
+  margin-right: .1rem;
+  border: 1px solid #e01222;
+  box-sizing: border-box;
+}
+.goBottomBox .quxiao {
+  background: #fff;
+  color: #999;
+  border: 1px solid #999;
+}
+.perTop {
+  width: 100%;
+  height: 2.3rem;
+  background: url(../images/perBac1.jpg) 100% 100% no-repeat;
+}
+.perTop img {
+  width: 1.1rem;
+  height: 1.1rem;
+  float: left;
+  margin-top: .6rem;
+  margin-left: .3rem;
+  border-radius: 50%;
+  border: 1px solid #f1f1f1;
+}
+.perTop .per_xinxi {
+  width: 4rem;
+  height: 1.1rem;
+  float: left;
+  margin-left: .2rem;
+  color: #fff;
+  margin-top: .6rem;
+}
+.perTop .per_xinxi p {
+  margin-top: .1rem;
+  font-size: .22rem;
+}
+.perTop .per_xinxi .perName {
+  font-size: .32rem;
+}
+.perNav_one {
+  width: 96%;
+  height: auto;
+  margin: .2rem auto 0;
+}
+.perNav_one p {
+  font-size: .28rem;
+  line-height: .4rem;
+  padding-bottom: .1rem;
+  border-bottom: 1px solid #dedede;
+}
+.perNav_one ul {
+  width: 100%;
+  height: 1.1rem;
+  margin-top: .15rem;
+}
+.perNav_one ul li {
+  float: left;
+  text-align: center;
+  font-size: .24rem;
+  line-height: .4rem;
+}
+.perNav_one ul li i {
+  font-size: .4rem;
+  color: #666;
+}
+.perNav_one .daiban li {
+  width: 20%;
+  height: 1.1rem;
+}
+.perNav_one .gerenxingwei {
+  border-top: .2rem solid #f1f1f1;
+  padding-top: .2rem;
+}
+.perNav_one .gerenxingwei li {
+  width: 25%;
+  height: 1.1rem;
+}
+.perNav_one .gerenxingwei li .icon-youhuiquan {
+  color: #fc6506;
+}
+.perNav_one .gerenxingwei li .icon-shoucang {
+  color: #e01222;
+}
+.perNav_one .gerenxingwei li .icon-zuji-copy {
+  color: #1ecd16;
+}
+.perNav_one .gerenxingwei li .icon-shouhou {
+  color: #ffc93e;
+}
+.perNav_one .perFenlei {
+  height: auto;
+  border-top: .2rem solid #f1f1f1;
+  padding-top: .1rem;
+}
+.perNav_one .perFenlei li {
+  width: 100%;
+  height: 0.8rem;
+  line-height: .8rem;
+  border-bottom: 1px solid #f1f1f1;
+  text-align: left;
+}
+.perNav_one .perFenlei li i {
+  float: left;
+}
+.perNav_one .perFenlei li span {
+  float: left;
+  margin-left: .1rem;
+}
+.perNav_one .perFenlei li em {
+  float: right;
+}
+.addressBox {
+  height: 100%;
+  background: #f1f1f1;
+}
+.addressBox .address {
+  width: 100%;
+  height: auto;
+  margin: 0 auto .1rem;
+  background: #fff;
+}
+.addressBox .address .addreesTxt {
+  border-bottom: 1px solid #dedede;
+  padding: .15rem 0;
+}
+.addressBox .address .addreesTxt p {
+  width: 96%;
+  margin: .1rem 0 .1rem 2%;
+  font-size: .24rem;
+  color: #333;
+}
+.addressBox .address .caozuoAddrees {
+  position: relative;
+  height: .4rem;
+  line-height: .4rem;
+  margin-left: .2rem;
+  padding: .1rem 0 ;
+}
+.addressBox .address .caozuoAddrees .moren {
+  width: 50%;
+  height: 100%;
+  float: left;
+}
+.addressBox .address .caozuoAddrees .moren > i {
+  width: 0.25rem;
+  height: 0.25rem;
+  display: block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  border-radius: 50%;
+  cursor: pointer;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  margin-top: -0.125rem;
+}
+.addressBox .address .caozuoAddrees .moren > span {
+  font-size: .24rem;
+  line-height: .4rem;
+}
+.addressBox .address .caozuoAddrees .moren input {
+  width: 0.25rem;
+  height: 0.25rem;
+  opacity: 0;
+  position: relative;
+}
+.addressBox .address .caozuoAddrees .moren .activeI {
+  background: #e01222;
+  border: 1px solid #e01222;
+}
+.addressBox .address .caozuoAddrees .moren .activeIc {
+  color: #e01222;
+}
+.addressBox .address .caozuoAddrees .bianjiAddress {
+  width: 50%;
+  height: 100%;
+  float: left;
+  font-size: .24rem;
+  text-align: right;
+}
+.addressBox .address .caozuoAddrees .bianjiAddress button {
+  margin-left: .1rem;
+  background: none;
+  font-size: .24rem;
+}
+.addressBox .addAddress {
+  width: 100%;
+  height: 0.6rem;
+  background: #e01222;
+  font-size: .24rem;
+  color: #fff;
+  margin-top: .15rem;
+}
+.loadBox {
+  width: 100%;
+  padding-top: 2rem;
+}
+.loadBox h3 {
+  text-align: center;
+  line-height: 1.2rem;
+  color: #e01222;
+  font-size: .4rem;
+}
+.loadBox .inputBox {
+  width: 80%;
+  height: 0.7rem;
+  margin: .25rem auto;
+  background: #ffffff;
+  border: 1px solid #dedede;
+  border-radius: 0.1rem;
+}
+.loadBox .inputBox input {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  border-radius: 0.1rem;
+  font-size: .22rem;
+}
+.loadBox .inputBox input[type="text"] {
+  text-indent: .15rem;
+}
+.loadBox .yanzm-box input {
+  border: none;
+}
+.loadBox .yanzm-box div {
+  float: left;
+}
+.loadBox .yanzm-box .xitt-u1 {
+  width: 60%;
+  height: 100%;
+}
+.loadBox .yanzm-box .xitt-u2 {
+  width: 40%;
+  height: 100%;
+}
+.loadBox .yanzm-box .xitt-u2 input {
+  background: #e01222;
+  color: #fff;
+}
+.loadBox .btnCor {
+  border-color: #e01222;
+  background: #e01222;
+}
+.loadBox .btnCor input {
+  background: #e01222;
+  color: #fff;
+}
